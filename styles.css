@@ -1,0 +1,58 @@
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: black;
+  display: flex;
+  height: 100%;
+}
+
+div#brand-section {
+  border: solid green 2px;
+  padding: 50px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 15px;
+
+  /*gradient*/
+  background: radial-gradient(
+    circle at center,
+    black 50%,
+    rgb(70, 0, 128),
+    black
+  );
+}
+
+div#form-section {
+  border: solid red 2px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form {
+  border: solid green 2px;
+  display: flex;
+  flex-direction: column;
+}
