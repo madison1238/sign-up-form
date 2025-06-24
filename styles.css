@@ -16,22 +16,29 @@ body {
 }
 
 div#brand-section {
-  border: solid green 2px;
-  padding: 50px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 15px;
   border-radius: 15px;
 
-  /*gradient*/
   background: radial-gradient(
     circle at center,
-    black 50%,
-    rgb(70, 0, 128),
-    black
+    black 40%,
+    rgb(110, 57, 154) 70%,
+    black 95%
   );
+}
+
+div#glass {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 div#form-section {
@@ -43,7 +50,7 @@ div#form-section {
 }
 
 div.content {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
