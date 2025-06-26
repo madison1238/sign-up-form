@@ -167,7 +167,23 @@ input {
   border: none;
 }
 
+input:focus {
+  outline-color: rgb(216, 188, 251);
+}
+
+input:invalid {
+  outline-color: red;
+}
+
+p#warning {
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #757575;
+}
+
 button {
+  margin-top: 20px;
   background-color: white;
   color: black;
   border-radius: 10px;
