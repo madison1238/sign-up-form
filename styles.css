@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
+  font-weight: 400;
 }
 
 html,
@@ -15,7 +17,7 @@ body {
   height: 100%;
 }
 
-div#brand-section {
+#brand-section {
   flex: 1;
   display: flex;
   align-items: center;
@@ -26,22 +28,24 @@ div#brand-section {
   background: radial-gradient(
     circle at center,
     black 40%,
-    rgb(110, 57, 154) 70%,
-    black 95%
+    rgb(100, 33, 154) 68%,
+    black 92%
   );
 }
 
-div#glass {
+#glass {
   height: 100%;
   width: 100%;
   border-radius: 15px;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  padding: 150px 200px;
+  /*glass effect*/
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
-div#form-section {
+#form-section {
   border: solid red 2px;
   flex: 1;
   display: flex;
@@ -49,13 +53,68 @@ div#form-section {
   align-items: center;
 }
 
-div.content {
+.content {
   /*border: 2px solid red;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  align-self: center;
+}
+
+#brand-section .content {
+  gap: 15px;
+  text-align: center;
+  align-items: stretch;
+}
+
+#brand-section h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#brand-section p {
+  color: rgb(230, 223, 223);
+}
+
+#brand-section li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 5px 5px 15px;
+  height: 55px;
+
+  color: rgb(230, 223, 223);
+  background-color: rgb(124, 118, 118, 0.35);
+}
+
+span.step-num {
+  background-color: rgba(124, 118, 118, 0.716);
+  padding: 7px 8px;
+  border-radius: 50%;
+  font-size: small;
+  margin-right: 8px;
+}
+span.step-num:first-child {
+  padding: 7px 9px;
+}
+
+li#selected {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.955);
+}
+
+span#selected {
+  background-color: black;
 }
 
 form {
